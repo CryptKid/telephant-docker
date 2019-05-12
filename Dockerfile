@@ -6,7 +6,6 @@ RUN apt-get --no-install-recommends install libqt*5-dev qt*5-dev qt*5-doc-html q
 RUN apt-get install ca-certificates golang-go git -y
 #QT MAGIC
 ENV QT_PKG_CONFIG=true
-RUN $(go env GOPATH)/bin/qtsetup -test=false
 RUN go get -u -v -tags=no_env github.com/therecipe/qt/cmd/...
 RUN $(go env GOPATH)/bin/qtsetup -test=false
 # Build it
