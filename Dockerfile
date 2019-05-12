@@ -2,7 +2,7 @@ FROM ubuntu:rolling
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update -y
 RUN apt-get --no-install-recommends install build-essential  libglib2.0-dev libglu1-mesa-dev libpulse-dev -y
-RUN apt-get --no-install-recommends install libqt*5-dev qt*5-dev qt*5-doc-html qml-module-qtquick* -y
+RUN apt-get --no-install-recommends install libqt*5-dev qt*5-dev qt*5-doc-html qml-module-qtquick* qtbase5-dev -y
 RUN apt-get install ca-certificates golang-go git -y
 #QT MAGIC
 ENV QT_PKG_CONFIG=true
