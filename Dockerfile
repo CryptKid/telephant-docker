@@ -10,4 +10,5 @@ RUN go get -u -v -tags=no_env github.com/therecipe/qt/cmd/...
 RUN $(go env GOPATH)/bin/qtsetup -test=false
 # Build it
 ADD BUILDER.sh /
+VOLUME ["/result"]
 ENTRYPOINT ["/BUILDER.sh"]
