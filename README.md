@@ -9,7 +9,7 @@ Sounds complicated but has its advantages:
 
 ## Usage:
 
-### Prebuild container image
+### Prebuilt container image
 If you want to do a fresh build of telephant on an AMD64-machine, just run this docker command:
 ```bash
 docker pull cryptkiddie2/telephant-builder:latest
